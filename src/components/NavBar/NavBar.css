@@ -1,0 +1,18 @@
+.root {
+    background-color: #ff8282;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.footPrint {
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.burguer {
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}

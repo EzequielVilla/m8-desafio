@@ -1,0 +1,48 @@
+.cont {
+    border: solid 2px;
+    max-width: 325px;
+    min-width: 325px;
+    min-height: 280px;
+    max-height: 280px;
+    margin-top: 10px;
+}
+.cont__img {
+    background-color: #ff6868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo {
+    max-height: 140px;
+    max-width: 300px;
+}
+.name {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.location {
+    margin-left: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.cont__cardInfo {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
+.cont__cardInfo__report {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.report-new-cardInfo {
+    cursor: pointer;
+}

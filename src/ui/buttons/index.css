@@ -1,0 +1,35 @@
+button {
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 16px;
+
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 325px;
+    min-width: 325px;
+}
+
+.greyButton {
+    background-color: #c4c4c4;
+    border-radius: 50px;
+    max-width: 325px;
+    min-width: 325px;
+}
+.greenButton {
+    background-color: #97ea9f;
+    border-radius: 50px;
+    max-width: 325px;
+    min-width: 325px;
+}
+.pinkButton {
+    border-radius: 50px;
+    background-color: #ff9df5;
+    max-width: 325px;
+    min-width: 325px;
+}

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    cursor: pointer;
+    max-width: 350px;
+    max-height: 200px;
+}
+.name-comp {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.button {
+    margin-top: 20px;
+}
