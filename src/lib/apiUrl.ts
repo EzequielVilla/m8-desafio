@@ -1,8 +1,8 @@
 
 const dev = process.env.NODE_ENV === "development";
 export let API_BASE_URL=''
-console.log(process.env.Node_ENV,'process');
 
+console.log(process.env.NODE_ENV,'process');
 console.log(dev);
 
 dev? API_BASE_URL = "http://localhost:3000"

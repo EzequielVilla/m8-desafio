@@ -10,7 +10,6 @@
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
     "start": "live-server",
     "postinstall": "npm ls colors"
-    
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.11",
@@ -33,6 +32,7 @@
     "live-server": "1.2.1",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.6.1",
+    "process": "^0.11.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dropzone": "^11.4.2",
@@ -45,6 +45,8 @@
     "style-loader": "^3.3.1",
     "svg-url-loader": "^7.1.1"
   },
-  "overrides": { "colors": "1.4.0" },
+  "overrides": {
+    "colors": "1.4.0"
+  },
   "main": "index.js"
 }
