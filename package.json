@@ -24,7 +24,7 @@
     "css-loader": "^6.5.1",
     "dotenv": "^10.0.0",
     "dropzone": "^6.0.0-beta.2",
-    "live-server": "^1.2.1",
+    "live-server": "^1.2.0",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.6.1",
     "react": "^17.0.2",
