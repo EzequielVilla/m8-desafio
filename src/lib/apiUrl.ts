@@ -8,7 +8,7 @@ console.log(process.env.node_env,'firebase');
 console.log(dev);
 
 dev? API_BASE_URL = "http://localhost:3000"
-    : API_BASE_URL = "https://dwf-m7-desafio.herokuapp.com/";
+    : API_BASE_URL = "https://dwf-m7-desafio.herokuapp.com";
 
 
 
