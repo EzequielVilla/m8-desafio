@@ -2,6 +2,9 @@
   "name": "1",
   "version": "1.0.0",
   "license": "MIT",
+  "resolutions": {
+    "colors": "1.4.0"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
@@ -40,9 +43,6 @@
     "recoil-persist": "^4.0.0",
     "style-loader": "^3.3.1",
     "svg-url-loader": "^7.1.1"
-  },
-  "resolutions": {
-    "colors": "1.4.0"
   },
   "overrides": { "colors": "1.4.0" },
   "main": "index.js"
