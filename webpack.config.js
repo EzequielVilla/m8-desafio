@@ -5,7 +5,8 @@ const liveServer = require("live-server");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const dotenv = require("dotenv");
 dotenv.config();
-
+var colors = require("colors");
+colors.disable();
 if (dev) {
     liveServer.start({
         file: "index.html",
