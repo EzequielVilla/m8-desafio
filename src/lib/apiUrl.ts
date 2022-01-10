@@ -2,8 +2,8 @@
 const dev = process.env.NODE_ENV === "development";
 export let API_BASE_URL=''
 
-console.log(process.env.NODE_ENV,'process cambio2');
-console.log(process.env.node_env,'firebase');
+console.log(process.env.NODE_ENV,'process cambio3');
+
 
 console.log(dev);
 
