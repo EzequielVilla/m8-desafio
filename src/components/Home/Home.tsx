@@ -7,7 +7,7 @@ import { CardOrButton } from "./CardOrButton";
 import css from "./Home.css";
 
 export function Home() {
-    console.log(API_BASE_URL);
+    console.log(API_BASE_URL, "a");
 
     return (
         <div className={css.container}>

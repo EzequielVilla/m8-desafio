@@ -4,7 +4,7 @@ export let API_BASE_URL=''
 
 console.log(dev);
 
-dev? API_BASE_URL = "https://dwf-m7-desafio.herokuapp.com/"
+dev? API_BASE_URL = "http://localhost:3000"
     : API_BASE_URL = "https://dwf-m7-desafio.herokuapp.com/";
 
 
