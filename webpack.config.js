@@ -1,16 +1,16 @@
 const path = require("path");
+const webpack = require("webpack");
 const dev = process.env.NODE_ENV == "development";
-const liveServer = require("live-server");
+// const liveServer = require("live-server");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const dotenv = require("dotenv");
-const webpack = require("webpack");
 dotenv.config();
 
-if (dev) {
-    liveServer.start({
-        file: "index.html",
-    });
-}
+// if (dev) {
+//     liveServer.start({
+//         file: "index.html",
+//     });
+// }
 const cssRulesModule = {
     test: /\.css?$/i,
     use: [
