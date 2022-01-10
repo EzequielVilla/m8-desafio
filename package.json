@@ -2,13 +2,11 @@
   "name": "1",
   "version": "1.0.0",
   "license": "MIT",
-  "resolutions": {
-    "colors": "1.4.0"
-  },
+
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
-    "postinstall": "npm ls colors"
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js"
+
     
   },
   "devDependencies": {
