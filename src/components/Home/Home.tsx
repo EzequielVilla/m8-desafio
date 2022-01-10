@@ -11,7 +11,7 @@ export function Home() {
 
     return (
         <div className={css.container}>
-            <Title>Mascotas perdidas cerca tuyo</Title>
+            <Title>TEST</Title>
             <CardOrButton />
         </div>
     );
