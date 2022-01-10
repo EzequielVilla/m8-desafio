@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
-    "start": "live-server"
+    "start": "live-server",
+    "preinstall": "npx npm-force-resolutions"
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.11",
