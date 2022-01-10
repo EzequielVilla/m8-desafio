@@ -1,15 +1,17 @@
 const path = require("path");
 const dev = process.env.NODE_ENV == "development";
 const webpack = require("webpack");
-// const liveServer = require("live-server");
+const liveServer = require("live-server");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const dotenv = require("dotenv");
 dotenv.config();
-// if (dev) {
-//     liveServer.start({
-//         file: "index.html",
-//     });
-// }
+var colors = require("colors");
+colors.disable();
+if (dev) {
+    liveServer.start({
+        file: "index.html",
+    });
+}
 const cssRulesModule = {
     test: /\.css?$/i,
     use: [

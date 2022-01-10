@@ -2,10 +2,15 @@
   "name": "1",
   "version": "1.0.0",
   "license": "MIT",
-
+  "resolutions": {
+    "colors": "1.4.0"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
+    "start": "live-server",
+    "postinstall": "npm ls colors"
+    
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.11",
@@ -21,9 +26,11 @@
     "@types/mapbox-gl": "^2.6.0",
     "@types/node": "^16.11.10",
     "@types/react": "^17.0.34",
+    "colors": "1.4.0",
     "css-loader": "^6.5.1",
     "dotenv": "^10.0.0",
     "dropzone": "^6.0.0-beta.2",
+    "live-server": "1.2.1",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.6.1",
     "react": "^17.0.2",
@@ -38,5 +45,6 @@
     "style-loader": "^3.3.1",
     "svg-url-loader": "^7.1.1"
   },
+  "overrides": { "colors": "1.4.0" },
   "main": "index.js"
 }
