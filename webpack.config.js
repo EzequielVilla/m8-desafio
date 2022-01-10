@@ -4,9 +4,9 @@ const webpack = require("webpack");
 const liveServer = require("live-server");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const dotenv = require("dotenv");
+
 dotenv.config();
-var colors = require("colors");
-colors.disable();
+
 if (dev) {
     liveServer.start({
         file: "index.html",
@@ -65,6 +65,7 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env": {
                 MAPBOX_TOKEN: JSON.stringify(process.env.MAPBOX_TOKEN),
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV),
             },
         }),
         new webpack.ProvidePlugin({
