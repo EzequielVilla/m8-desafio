@@ -1,11 +1,11 @@
-const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN;
-const mapboxClient = new MapboxClient(MAPBOX_TOKEN);
-export { mapboxClient };
+// const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN;
+// const mapboxClient = new MapboxClient(MAPBOX_TOKEN);
+// export { mapboxClient };
 
 //in this case require lat and lng for set the center of the map
-export function viewMap(lat, lng) {
-    // window.map = initMap(lat, lng);
-}
+// export function viewMap(lat, lng) {
+// window.map = initMap(lat, lng);
+// }
 
 // function initMap(lat, lng) {
 //     mapboxgl.accessToken = MAPBOX_TOKEN;
