@@ -17,7 +17,7 @@ import css from "./EditUserPet.css";
 //MAP
 import ReactMapboxGl, { Layer, Marker } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-const Map = ReactMapboxGl({
+export const Map = ReactMapboxGl({
     accessToken: process.env.MAPBOX_TOKEN,
 });
 //

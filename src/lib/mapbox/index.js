@@ -1,5 +1,8 @@
-// const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN;
-// const mapboxClient = new MapboxClient(MAPBOX_TOKEN);
+export const mapboxClient = (mapboxgl.accessToken = process.env.MAPBOX_TOKEN);
+
+// const mapboxClient = new MapboxClient({
+//     accessToken: process.env.MAPBOX_TOKEN,
+// });
 // export { mapboxClient };
 
 //in this case require lat and lng for set the center of the map
