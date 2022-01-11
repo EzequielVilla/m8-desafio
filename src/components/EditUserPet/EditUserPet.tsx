@@ -31,6 +31,9 @@ export function EditUserPet() {
     const petPhoto = useGetPhoto();
     const navigate = useNavigate();
     const token = useGetToken();
+    // console.log(photo?.preview);
+    console.log(photo?.preview ? 1 : 2);
+
     const imagen = photo?.preview ? photo.preview : petPhoto;
     const [getRootProps, getInputProps] = dropzoneFileManager();
 
