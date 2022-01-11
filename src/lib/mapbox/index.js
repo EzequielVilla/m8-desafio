@@ -1,16 +1,7 @@
-let mapboxClient = "";
-import * as admin from "firebase-admin";
-admin.initializeApp();
-console.log(process.env.MAPBOX_TOKEN);
-console.log(process.env.mapbox_token);
-console.log(process.env.FIREBASE_CONFIG);
-
-if (process.env.NODE_ENV === "development") {
-    mapboxClient = mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
-} else {
-    mapboxClient = "";
-}
-
+const MAPBOX_TOKEN =
+    "pk.eyJ1IjoiZXplcXVpZWw5MyIsImEiOiJja3U0aTAyc2gwaGg1MnBvNmhyemJzbDc2In0.VfvIXjWgL8_dqs1ZKlQorA";
+const mapboxClient = new MapboxClient(MAPBOX_TOKEN);
+export { mapboxClient };
 // const mapboxClient = new MapboxClient({
 //     accessToken: process.env.MAPBOX_TOKEN,
 // });

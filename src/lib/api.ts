@@ -79,7 +79,7 @@ export async function updateUserData(firstName:string,password:string, token:str
 }
 
 export async function getMyReportedPets(token:string):Promise<Array<PetsData>>{
-
+    
     const resp = await fetch(API_BASE_URL+`/mypets`,{
         method:"get",
         headers:{
@@ -96,6 +96,13 @@ export async function getMyReportedPets(token:string):Promise<Array<PetsData>>{
         })
         return petsData;
     }
+}
+export async function getMapboxToken(){
+    const resp = await fetch(API_BASE_URL+`/mapbox`,{
+        method:"get",
+    })
+    const data = await resp.json();
+    return data;
 }
 
 export function uploadMissedPet(data:PetsData, token:string):void{

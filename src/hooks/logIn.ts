@@ -1,7 +1,6 @@
 import { directionMenu, getUserReports, logInState, petPhoto, tokenInfo } from "atoms";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { useRecoilState, useRecoilValue, useResetRecoilState, useSetRecoilState } from "recoil"
+import { useRecoilValue, useResetRecoilState, useSetRecoilState } from "recoil"
 
 
 
