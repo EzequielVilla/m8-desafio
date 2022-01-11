@@ -23,7 +23,7 @@ export function PopUp(props: PopUpData) {
         const { userId, petName } = props.data;
         const data = { userId, petName, firstName, phone, location };
         await sendReport(data);
-
+        alert("Reporte enviado");
         props.data.setPopUp(false);
     }
     return (
@@ -52,9 +52,9 @@ export function PopUp(props: PopUpData) {
                     name={"location"}
                     className={css["find-cardInfo"]}
                 ></MyTextField>
-                <GreenButton className={css["send-cardInfo"]}>
-                    Enviar
-                </GreenButton>
+                <div className={css["send-cardInfo"]}>
+                    <GreenButton className={""}>Enviar</GreenButton>
+                </div>
             </form>
         </div>
     );
