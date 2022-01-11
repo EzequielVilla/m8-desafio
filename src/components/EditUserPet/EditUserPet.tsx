@@ -23,22 +23,17 @@ const Map = ReactMapboxGl({
 });
 //
 export function EditUserPet() {
-    const { id, lat, lng } = useParams();
-    const [button, setButton] = useState(false);
-    const { latNumber, lngNumber, imagen, navigate, token } = getConstants();
-
     const [photo, setPhoto] = useState([] as any);
+    const [button, setButton] = useState(false);
+    const { id, lat, lng } = useParams();
+    const latNumber = parseFloat(lat);
+    const lngNumber = parseFloat(lng);
+    const petPhoto = useGetPhoto();
+    const navigate = useNavigate();
+    const token = useGetToken();
+    const imagen = photo?.preview ? photo.preview : petPhoto;
     const [getRootProps, getInputProps] = dropzoneFileManager();
 
-    function getConstants() {
-        const latNumber = parseFloat(lat);
-        const lngNumber = parseFloat(lng);
-        const petPhoto = useGetPhoto();
-        const navigate = useNavigate();
-        const token = useGetToken();
-        const imagen = photo?.preview ? photo.preview : petPhoto;
-        return { latNumber, lngNumber, imagen, navigate, token };
-    }
     function dropzoneFileManager(): [any, any] {
         const { getRootProps, getInputProps } = useDropzone({
             accept: "image/*",
