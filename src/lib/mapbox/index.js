@@ -1,4 +1,16 @@
-export const mapboxClient = (mapboxgl.accessToken = process.env.MAPBOX_TOKEN);
+import firebase from "firebase";
+
+export let mapboxClient = "";
+
+console.log(process.env.FIREBASE_CONFIG);
+
+const key = firebase.config().process.env.mapbox_token;
+console.log(key);
+if (process.env.NODE_ENV === "development") {
+    mapboxClient = mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
+} else {
+    mapboxClient = "";
+}
 
 // const mapboxClient = new MapboxClient({
 //     accessToken: process.env.MAPBOX_TOKEN,

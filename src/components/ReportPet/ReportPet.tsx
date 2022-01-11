@@ -94,7 +94,7 @@ export function ReportPet() {
                         <AnimationButton></AnimationButton>
                     </PinkButton>
                 ) : (
-                    <PinkButton className={""}>Dar mi ubicación</PinkButton>
+                    <PinkButton className={""}>Reportar</PinkButton>
                 )}
             </div>
             <div className={css.button}>
