@@ -1,4 +1,6 @@
 let mapboxClient = "";
+import * as admin from "firebase-admin";
+admin.initializeApp();
 console.log(process.env.MAPBOX_TOKEN);
 console.log(process.env.mapbox_token);
 console.log(process.env.FIREBASE_CONFIG);
