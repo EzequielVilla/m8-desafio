@@ -7,9 +7,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js && setKey",
-    "setKey": "cross-env MAPBOX_TOKEN= npm run getMapboxKey",
-    "getMapboxKey": "firebase functions:config:get process.env.mapbox_token",
+    "build": "cross-env NODE_ENV=production MAPBOX_TOKEN= firebase functions:config:get process.env.mapbox_token webpack --config ./webpack.config.js ",
     "start": "live-server",
     "postinstall": "npm ls colors"
   },
