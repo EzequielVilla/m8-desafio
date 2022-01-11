@@ -1,6 +1,7 @@
-console.log(process.env.FIREBASE_CONFIG);
+let mapboxClient = "";
+console.log(process.env.MAPBOX_TOKEN);
+console.log(process.env.mapbox_token);
 
-console.log(key);
 if (process.env.NODE_ENV === "development") {
     mapboxClient = mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
 } else {
