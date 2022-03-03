@@ -35,6 +35,7 @@ export function ReportPet() {
                 const img = acceptedFiles[0];
                 //save the photo as a data64 file.
                 const reader = new FileReader();
+
                 reader.onload = (event) => {
                     setPhoto(
                         Object.assign(img, {

@@ -6,6 +6,7 @@ import { API_BASE_URL } from "./apiUrl";
 export async function createOrFindUser  (email:string):Promise<myEmailCheck>{
     
     const resp = await fetch(API_BASE_URL+`/user`,{
+        
         method: "post",
         headers:{
             "Content-Type":"application/json"
